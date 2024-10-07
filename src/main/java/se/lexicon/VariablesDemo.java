@@ -18,12 +18,16 @@ public class VariablesDemo {
 
         double decimal;
         int num1 = 10,num2,num3;
+        int number1 = 10000;
 
 
         String firstName = "Mehrdad";
         String lastName = "Javan";
         String fullName = firstName + " " + lastName;
         System.out.println(fullName.toLowerCase());
+        // default value for String is null
+        String hobby = null;
+        System.out.println(hobby);
 
 
     }
