@@ -15,6 +15,17 @@ public class VariablesDemo {
 
         // sout + tab
         System.out.println("Balance: " + balance); // 600000
+
+        double decimal;
+        int num1 = 10,num2,num3;
+
+
+        String firstName = "Mehrdad";
+        String lastName = "Javan";
+        String fullName = firstName + " " + lastName;
+        System.out.println(fullName.toLowerCase());
+
+
     }
 
 }
