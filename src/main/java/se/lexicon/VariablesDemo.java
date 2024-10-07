@@ -13,6 +13,7 @@ public class VariablesDemo {
 
         boolean isLoggedIn; // default value for boolean is false
 
+        // sout + tab
         System.out.println("Balance: " + balance); // 600000
     }
 
