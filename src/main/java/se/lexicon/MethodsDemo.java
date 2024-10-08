@@ -1,16 +1,38 @@
 package se.lexicon;
 
+import java.util.Scanner;
+
 public class MethodsDemo {
 
     public static void main(String[] args) {
-        printMenu();
+        boolean isActive = true;
+
+        while(isActive){
+            printMenu();
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter your choice:");
+            int operationNumber = scanner.nextInt();
+            switch (operationNumber){
+                case 1:
+                    // perform addition operation
+                    System.out.println("addition operation");
+                    break;
+                case 2:
+                    // perform subtraction operation
+                    System.out.println("subtraction operation");
+                    break;
+                case 0:
+                    isActive = false;
+                    System.out.println("Exit!");
+                    break;
+                default:
+                    System.out.println("Invalid choice. please enter a number between 0 - 2");
+            }
+        }
 
 
-        System.out.println(addition(10, 5));
-        System.out.println(addition(2, 2));
+    } // end of the main method
 
-
-    }
 
     // declare a method that takes nothing and prints menu
     public static void printMenu() {

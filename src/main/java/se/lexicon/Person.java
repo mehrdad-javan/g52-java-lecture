@@ -11,7 +11,7 @@ public class Person {
     // Constructors
 
     // Methods
-    public String getInformation(){
+    public String getInformation() {
         String personData = "First Name: " + firstName + ", Last Name: " + lastName + ", Age: " + age + ", Hobby: " + hobby;
         return personData;
     }

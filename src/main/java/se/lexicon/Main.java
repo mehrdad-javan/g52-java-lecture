@@ -36,6 +36,22 @@ public class Main {
         int additionResult2 = num1 + 50;*/
 
 
+        Car volvo = new Car();
+        volvo.regId = "abc1111";
+        volvo.brand= "VOLVO";
+        volvo.model = "V60";
+        volvo.year = 2024;
+
+        Car bmw = new Car();
+        // regId = null
+        // brand = null
+        // model = null
+        // year = 0
+        bmw.regId = "abc1111";
+        bmw.brand= "BMW";
+        bmw.model = "X6";
+        bmw.year = 2024;
+
     }
 
 }
