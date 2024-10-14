@@ -3,18 +3,21 @@ package se.lexicon;
 public class StringDemo {
 
     public static void main(String[] args) {
-        ex5();
+        ex1();
     }
 
     // Creating Strings & String concatenation
     public static void ex1() {
-        String str1 = "Hello, World!";
+        String str1 = "    Hello, World!   ";
+        System.out.println(str1.trim());
+        /*
         String str2 = new String("Hello, World!");
 
         String original = "Hello"; // Hello
         //original = original.concat(", ").concat("World!"); // Hello, World!
         original = original + ", " + "World!"; // Hello, World!
         System.out.println(original); // Output: Hello, World!
+         */
     }
 
 
@@ -38,7 +41,7 @@ public class StringDemo {
         System.out.println("index3 = " + index3);
     }
 
-    public static void ex4(){
+    public static void ex4() {
         String name = "Erik Svensson";
         System.out.println(name.startsWith("Erik")); // true
         System.out.println(name.endsWith("sson")); // true
@@ -46,7 +49,7 @@ public class StringDemo {
         System.out.println(name.contains("ve")); // true
     }
 
-    public static void ex5(){
+    public static void ex5() {
         String name = "Erik Svensson";
 
         // how to count how many (s or S) chars exist in the name
@@ -54,6 +57,25 @@ public class StringDemo {
         // step2: declare loop
         // step3: declare a counter variable then if we found the s char (counter++)
         // step4: print the result
+        int length = name.length();
+        int counter = 0;
+
+        for (int i = 0; i < length; i++) {
+           char currentChar = name.charAt(i);
+           if (currentChar == 's' || currentChar == 'S'){
+               counter++;
+           }
+        }
+
+        System.out.println("Number of 's || S' is: " + counter); // 3
+
+
+        int lengthWithS = name.length(); // Erik Svensson = 13
+        int lengthWithoutS = name.replaceAll("[sS]", "").length(); // Erik venon = 10
+        int count = lengthWithS - lengthWithoutS; // 3
+        System.out.println("Number of 's || S' is: " + count); // 3
+
+
 
     }
 
