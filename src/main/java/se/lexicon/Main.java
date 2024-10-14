@@ -10,10 +10,13 @@ public class Main {
     // psvm + tab
     public static void main(String[] args) {
 
+        // ClassName.methodName();
+        System.out.println(MethodOverLoadingDemo.multiply(2, 3));
 
-        MethodsDemo.printMenu();
-        System.out.println(MethodsDemo.addition(10, 5));
-        System.out.println(MethodsDemo.addition(1, 1));
+
+        // MethodsDemo.printMenu();
+        // System.out.println(MethodsDemo.addition(10, 5));
+        // System.out.println(MethodsDemo.addition(1, 1));
 
         /*Person erik = new Person();
         erik.firstName = "Erik";
@@ -36,7 +39,7 @@ public class Main {
         int additionResult2 = num1 + 50;*/
 
 
-        Car volvo = new Car();
+        /*Car volvo = new Car();
         volvo.regId = "abc1111";
         volvo.brand= "VOLVO";
         volvo.model = "V60";
@@ -50,7 +53,7 @@ public class Main {
         bmw.regId = "abc1111";
         bmw.brand= "BMW";
         bmw.model = "X6";
-        bmw.year = 2024;
+        bmw.year = 2024;*/
 
     }
 
